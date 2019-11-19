@@ -13,12 +13,16 @@
 
 //use Symfony\Component\Routing\Route;
 
+//use Symfony\Component\Routing\Route;
+
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/admin','AdminController@getlistword');
 Route::get('/addword','LangController@AddWord');
 Route::post('/postword','AdminController@postWord');
+Route::get('/edit/{id}','AdminController@edit');
+Route::post('update_word','AdminController@updateWord');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

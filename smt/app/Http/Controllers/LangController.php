@@ -9,7 +9,7 @@ class LangController extends Controller
 {
     public function AddWord(){
         $list_lang=Lang::getLang();
-        $data=array('lang'=>$list_lang);
+        $data=array('lang'=>$list_lang,'word'=>null);
         return view('addword',$data);
     }
 }
