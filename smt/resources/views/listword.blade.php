@@ -28,6 +28,9 @@
                             </td>
                     </tr>
                     @endforeach
+                                </tbody>
+                        </table>
+                    {{ $words->links() }}
                 </div>
             </div>
         </div>

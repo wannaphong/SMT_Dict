@@ -8,12 +8,13 @@ use DB;
 class Admin extends Model
 {
     //
+    public static function getpagination(){}
     public static function Listword($id=null){
         if($id==null){
         return DB::table('words')->select('id', 'ws', 'meaning')
-        ->limit(10)
+        ->paginate(15);
         //->join('lang','lang.id','words.lang_m')
-        ->get();
+        //->get();
         }
         else{
             return DB::table('words')->where('id',$id)->get()->first();
