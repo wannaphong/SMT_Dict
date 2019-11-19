@@ -1,12 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
+<script>
+        function checkY() {
+          confirm("คุณแน่ใจหรือไม่ ?");
+        }
+        </script>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">รายการคำ</div>
-                <a href="./addword">เพิ่มคำ</a>
+                <a class="btn btn-primary" href="./addword">เพิ่มคำ</a>
 
                 <div class="card-body">
                         <table class="table">
@@ -23,8 +28,8 @@
                             <th scope="row">{{$key->ws}}</th>
                             <td>{{$key->meaning}}</td>
                             <td>
-                                <a href="./edit_word/{{$key->id}}">แก้ไข</a>
-                                <a href="./del_word/{{$key->id}}">ลบ</a>
+                                <a class="btn btn-warning" href="./edit_word/{{$key->id}}">แก้ไข</a>
+                                <a class="btn btn-danger" onclick="checkY()" href="./del_word/{{$key->id}}">ลบ</a>
                             </td>
                     </tr>
                     @endforeach

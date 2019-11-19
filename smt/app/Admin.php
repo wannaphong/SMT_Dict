@@ -12,7 +12,7 @@ class Admin extends Model
     public static function Listword($id=null){
         if($id==null){
         return DB::table('words')->select('id', 'ws', 'meaning')
-        ->paginate(15);
+        ->paginate(30);
         //->join('lang','lang.id','words.lang_m')
         //->get();
         }
