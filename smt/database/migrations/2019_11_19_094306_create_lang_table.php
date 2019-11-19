@@ -8,6 +8,7 @@ class CreateLangTable extends Migration
 {
     /**
      * Run the migrations.
+     * ภาษา
      *
      * @return void
      */

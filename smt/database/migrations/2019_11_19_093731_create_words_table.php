@@ -8,6 +8,7 @@ class CreateWordsTable extends Migration
 {
     /**
      * Run the migrations.
+     * คำศัพท์
      *
      * @return void
      */
