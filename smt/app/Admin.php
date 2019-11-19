@@ -10,7 +10,8 @@ class Admin extends Model
     //
     public static function Listword($id=null){
         if($id==null){
-        return DB::table('words')
+        return DB::table('words')->select('id', 'ws', 'meaning')
+        ->limit(10)
         //->join('lang','lang.id','words.lang_m')
         ->get();
         }

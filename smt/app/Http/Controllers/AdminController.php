@@ -15,6 +15,7 @@ class AdminController extends Controller
     }
     public function getlistword(){
         $listword=Admin::Listword();
+       // dd($listword);
         //dd($listword);
         $data=array('words'=>$listword);
         return view("listword",$data);
