@@ -9,6 +9,10 @@ use App\Lang as Lang;
 class AdminController extends Controller
 {
     //
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function getlistword(){
         $listword=Admin::Listword();
         //dd($listword);
