@@ -17,9 +17,9 @@ class CreateWordsTable extends Migration
         Schema::create('words', function (Blueprint $table) {
             $table->increments('id'); // ไอดี
             $table->string('ws'); // คำค้น
-            $table->integer('lang_ws'); // ภาษาต้นทาง
+            $table->string('lang_ws'); // ภาษาต้นทาง
             $table->string('meaning'); // คำแปล
-            $table->integer('lang_m'); // ภาษาของคำแปล
+            $table->string('lang_m'); // ภาษาของคำแปล
             $table->timestamps();
         });
     }
