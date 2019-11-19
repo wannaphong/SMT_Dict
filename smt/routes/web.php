@@ -23,6 +23,7 @@ Route::get('/addword','LangController@AddWord');
 Route::post('/postword','AdminController@postWord');
 Route::get('/edit/{id}','AdminController@edit');
 Route::post('update_word','AdminController@updateWord');
+Route::get('/del/{id}','AdminController@del_word');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

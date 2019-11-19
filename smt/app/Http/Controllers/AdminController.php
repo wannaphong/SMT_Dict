@@ -43,4 +43,8 @@ class AdminController extends Controller
         $data=array('word'=>$word,'lang'=>$list_lang);
         return view('addword',$data);
     }
+    public function del_word($id){
+        Admin::delword($id);
+        return redirect("admin");
+    }
 }

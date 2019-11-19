@@ -22,7 +22,10 @@
                     <tr>
                             <th scope="row">{{$key->ws}}</th>
                             <td>{{$key->meaning}}</td>
-                            <td></td>
+                            <td>
+                                <a href="./edit/{{$key->id}}">แก้ไข</a>
+                                <a href="./del/{{$key->id}}">ลบ</a>
+                            </td>
                     </tr>
                     @endforeach
                 </div>

@@ -27,4 +27,7 @@ class Admin extends Model
             ->update($data);
         }
     }
+    public static function delword($id){
+        DB::table('words')->where('id',$id)->delete();
+    }
 }
