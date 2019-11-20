@@ -1,15 +1,23 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
+<html>
+  <head>
+        <meta charset="UTF-8" />
 <title>
 SMT-DICT
 </title>
- <h3>SMT-DICT<h3>
+<style>
+             body {
+                background-color: bg-info;
+                  }
+                  
+            </style>
+</head>
      <body>
-         <img src="img/name.png" alt="">
+         <center><img src="img/name.png" alt="">
+         <form class="form-search">
+			<input type="text" class="input-medium search-query">
+            <button type="submit" class="btn">Search</button>
+            </form>
+            
+
+        </center>
      </body>
-</div>
-
-
-@endsection
