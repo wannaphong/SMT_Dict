@@ -15,4 +15,4 @@ SMT Dict
 
 ## วิธีการติดตั้ง
 
-เปลี่ยนชื่อจาก .env.example ให้เป็น .env แก้ไข Database ให้เรียบร้อย จากนั้นสั่ง php artisan install
+เปลี่ยนชื่อจาก .env.example ให้เป็น .env แก้ไข Database ให้เรียบร้อย จากนั้นสั่ง composer install
