@@ -7,7 +7,7 @@ SMT-DICT
 </title>
  <h3>SMT-DICT<h3>
      <body>
-         <img src="name.png" alt="">
+         <img src="img/name.png" alt="">
      </body>
 </div>
 
