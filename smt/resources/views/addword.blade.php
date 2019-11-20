@@ -4,16 +4,14 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-12">
-            @if ($word==null)
-            เพิ่มคำใหม่
-            @else
-            แก้ไขคำ
-            @endif
-        </div>
-        <div class="col-md-12">
 
             <div class="card">
-                <div class="card-header">คำ</div>
+                <div class="card-header">
+                    @if ($word==null)
+                        เพิ่มคำใหม่
+                        @else
+                        แก้ไขคำ
+                        @endif</div>
                 @if ($word==null)
                 <form method="POST" action="./postword">
                 @else

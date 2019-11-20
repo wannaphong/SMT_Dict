@@ -16,7 +16,7 @@
 //use Symfony\Component\Routing\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('search');
 });
 Route::get('/admin', function () {
     return redirect('word');

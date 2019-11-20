@@ -8,3 +8,4 @@ class Members extends Model
 {
     //
 }
+

@@ -11,15 +11,17 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">รายการคำ</div>
-                <a class="btn btn-primary" href="./addword">เพิ่มคำ</a>
+                <a href="./home">< กลับหน้าหลัก</a>
+
 
                 <div class="card-body">
+                        <a class="btn btn-primary" href="./addword">เพิ่มคำ</a>
                         <table class="table">
                                 <thead>
                                   <tr>
                                     <th scope="col">คำ</th>
                                     <th scope="col">ความหมาย</th>
-                                    <th scope="col">กระทำ</th>
+                                    <th scope="col"></th>
                                   </tr>
                                 </thead>
                                 <tbody>
