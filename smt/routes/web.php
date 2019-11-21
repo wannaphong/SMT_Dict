@@ -18,6 +18,9 @@
 Route::get('/', function () {
     return view('search');
 });
+Route::post('/', function () {
+    return view('search');
+});
 Route::get('/admin', function () {
     return redirect('word');
 });
