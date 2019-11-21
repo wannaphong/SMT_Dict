@@ -11,20 +11,13 @@
 |
 */
 
-//use Symfony\Component\Routing\Route;
-
-//use Symfony\Component\Routing\Route;
-
-Route::get('/', function () {
-    return view('search');
-});
-Route::post('/', function () {
-    return view('search');
-});
+Route::get('/', 'SearchController@home');
+Route::get('/s', 'SearchController@getsearch');
 Route::get('/admin', function () {
     return redirect('word');
 });
 Auth::routes();
+Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
 Route::get('/word','AdminController@getlistword');
 Route::get('/addword','LangController@AddWord');
 Route::post('/postword','AdminController@postWord');
