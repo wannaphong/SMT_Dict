@@ -34,12 +34,17 @@
 </head>
 
   <body>
+  <style>
+      body {
+        background-color:"gray"
+      }
+    </style>
     <div class="container">
       <div class="jumbotron" style="background-color: orange">
         <h1>DICTIONARY</h1>
         <nav>
           <form method="GET" action="{{ url('/s') }}">
-                @csrf
+                
                 <div class="form-group row">
                 <div class="col-sm-10">
             <input id="search" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="Search" aria-label="Search" />
@@ -54,7 +59,7 @@
       @if($word!=null)
       <div class="container">
         <h4>รายละเอียด</h4>
-        <table class="table table-bordered">
+        <table class="table table-striped">
           <thead>
             <center>
               <tr>
