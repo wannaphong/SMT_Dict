@@ -13,14 +13,19 @@
 
 Route::get('/', 'SearchController@home');
 Route::get('/s', 'SearchController@getsearch');
+
 Route::get('/admin', function () {
-    return redirect('word');
+    return redirect('home');
 });
-Auth::routes();
+Auth::routes(['verify' => true, 'register' => false]);
+//Auth::routes();
 Route::get('autocomplete', 'SearchController@autocomplete')->name('autocomplete');
 Route::get('/word','AdminController@getlistword');
+Route::get('/lang','LangController@show_list_lang');
+Route::get('/addlang','LangController@Addlang');
 Route::get('/addword','LangController@AddWord');
 Route::post('/postword','AdminController@postWord');
+Route::post('/postlang','LangController@postLang');
 Route::get('/edit_word/{id}','AdminController@edit');
 Route::post('update_word','AdminController@updateWord');
 Route::get('/del_word/{id}','AdminController@del_word');

@@ -13,7 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a class="btn btn-warning" href="./word">จัดการคำศัพท์</a>
+                    <a class="btn btn-warning" href="./word">จัดการคำศัพท์</a><br>
+                    <a class="btn btn-warning" href="./lang">จัดการภาษา</a>
                 </div>
             </div>
         </div>
