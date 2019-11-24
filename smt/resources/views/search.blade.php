@@ -39,9 +39,23 @@
         background-color:"gray"
       }
     </style>
+    <ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
     
     <div class="container">
-      <div class="jumbotron" style="background-color: orange">
+      <div class="jumbotron" style="background-color: black">
         <h1 style="color:white">DICTIONARY</h1>
         <nav>
           <form method="GET" action="{{ url('/s') }}">
