@@ -39,12 +39,10 @@
         background-color:"gray"
       }
     </style>
-    <ul   class="nav navbar navbar-dark bg-dark justify-content-center">  
+    <ul   class="nav navbar navbar-dark bg-dark nav justify-content-end">  
+  
   <li class="nav-item">
-    <a class="nav-link active" href="#">HOME</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Login</a>
+    <a class="nav-link" href="./login" style="color:white">Login</a>
   </li>
   <li class="nav-item">
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">MADE BY SMT</a>
@@ -54,12 +52,12 @@
     <center><div class="container">
       <div class="jumbotron" style="background-color: white">
       <img src="img/logo.png" class="card-img-top" alt="..."
-      style="width: 300px; height: 100px;">
+      style="width: 300px; height: 200px;">
         <nav>
           <form method="GET" action="{{ url('/s') }}">
                 
-                <div class="form-group row">
-                <div class="col-sm-3">
+                <div class="form-group row nav justify-content-center ">
+                <div class="col-sm-4">
             <input id="search" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="Search" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
@@ -69,6 +67,13 @@
           </form>
         </nav>
       </div></center>
+      
+      <div class="row d-flex justify-content-center ">
+          <div class="col-8">
+              <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
+                   
+         
       @if($word!=null)
       <div class="container">
         <h4>รายละเอียด</h4>
@@ -93,6 +98,9 @@
       </div>
     </div>
     @endif
+    </div></div>
+        </div>
+      </div></div> <br><br><br>
 
 
     <script type="text/javascript">
