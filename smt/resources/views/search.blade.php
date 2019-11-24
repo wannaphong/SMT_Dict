@@ -36,7 +36,7 @@
   <body>
   <style>
       body {
-        background-color:"gray"
+       
       }
     </style>
     <ul   class="nav navbar navbar-dark bg-dark nav justify-content-end">  
@@ -100,7 +100,10 @@
     @endif
     </div></div>
         </div>
-      </div></div> <br><br><br>
+      </div></div> <br>
+      <ul   class="nav navbar navbar-dark bg-dark nav nav justify-content-center">
+      <img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp; 
+        <b style="color:white " > COPYRIGHT SMT TEAM<b>
 
 
     <script type="text/javascript">
