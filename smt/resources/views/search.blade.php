@@ -56,8 +56,8 @@
         <nav>
           <form method="GET" action="{{ url('/s') }}">
                 
-                <div class="form-group row nav justify-content-center ">
-                <div class="col-sm-4">
+          <div class="form-group row nav justify-content-center ">
+                <div class="col-sm-4 ">
             <input id="search" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="Search" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
@@ -70,11 +70,12 @@
       
       <div class="row d-flex justify-content-center ">
           <div class="col-8">
-              <div class="card shadow p-3 mb-5 bg-white rounded">
-                  <div class="card-body">
+             
                    
          
       @if($word!=null)
+      <div class="card shadow p-3 mb-5 bg-white rounded">
+                  <div class="card-body">
       <div class="container">
         <h4>รายละเอียด</h4>
         <table class="table table-striped">
@@ -97,8 +98,9 @@
         </table>
       </div>
     </div>
-    @endif
     </div></div>
+    @endif
+    
         </div>
       </div></div> <br>
       <ul   class="nav navbar navbar-dark bg-dark nav nav justify-content-center">
