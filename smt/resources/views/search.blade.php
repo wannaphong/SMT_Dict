@@ -39,9 +39,10 @@
         background-color:"gray"
       }
     </style>
+    
     <div class="container">
       <div class="jumbotron" style="background-color: orange">
-        <h1>DICTIONARY</h1>
+        <h1 style="color:white">DICTIONARY</h1>
         <nav>
           <form method="GET" action="{{ url('/s') }}">
                 
