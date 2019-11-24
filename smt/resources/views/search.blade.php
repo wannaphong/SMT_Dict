@@ -39,9 +39,9 @@
         background-color:"gray"
       }
     </style>
-    <ul class="nav justify-content-center">
+    <ul   class="nav navbar navbar-dark bg-dark justify-content-center">  
   <li class="nav-item">
-    <a class="nav-link active" href="#">Active</a>
+    <a class="nav-link active" href="#">HOME</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
@@ -54,14 +54,15 @@
   </li>
 </ul>
     
-    <div class="container">
-      <div class="jumbotron" style="background-color: black">
-        <h1 style="color:white">DICTIONARY</h1>
+    <center><div class="container">
+      <div class="jumbotron" style="background-color: white">
+      <img src="img/logo.png" class="card-img-top" alt="..."
+      style="width: 300px; height: 100px;">
         <nav>
           <form method="GET" action="{{ url('/s') }}">
                 
                 <div class="form-group row">
-                <div class="col-sm-10">
+                <div class="col-sm-3">
             <input id="search" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="Search" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
@@ -70,7 +71,7 @@
         </div>
           </form>
         </nav>
-      </div>
+      </div></center>
       @if($word!=null)
       <div class="container">
         <h4>รายละเอียด</h4>
