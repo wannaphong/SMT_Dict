@@ -31,14 +31,17 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
-</head>
-
-  <body>
   <style>
       body {
+      background-image:url("img/bg.png");
        
       }
     </style>
+</head>
+
+  <body>
+  
+ 
     <ul   class="nav navbar navbar-dark bg-dark nav justify-content-end">  
   
   <li class="nav-item">
@@ -49,7 +52,7 @@
   </li>
 </ul>
     
-    <center><div class="container">
+    <center>
       <div class="jumbotron" style="background-color: white">
       <img src="img/logo.png" class="card-img-top" alt="..."
       style="width: 300px; height: 200px;">
@@ -103,10 +106,10 @@
     
         </div>
       </div></div> <br>
-      <ul   class="nav navbar navbar-dark bg-dark nav nav justify-content-center">
-      <img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp; 
-        <b style="color:white " > COPYRIGHT SMT TEAM<b>
-
+      <div class="footer fixed-bottom bg-dark ">
+      <center><img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp; 
+        <b style="color:white " > COPYRIGHT SMT TEAM<b></center>
+</div>
 
     <script type="text/javascript">
 
