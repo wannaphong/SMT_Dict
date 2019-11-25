@@ -53,7 +53,7 @@
 </ul>
     
     <center>
-      <div class="jumbotron" style="background-color: white">
+      
       <img src="img/logo.png" class="card-img-top" alt="..."
       style="width: 300px; height: 200px;">
         <nav>
