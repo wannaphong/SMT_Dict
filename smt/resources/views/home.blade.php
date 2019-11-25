@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">หน้าควบคุม</div>
+                <div class="card-header">เมนูจัดการคำศัพท์</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -13,7 +13,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <a class="btn btn-warning" href="./word">จัดการคำศัพท์</a><br>
+                    <a class="btn btn-warning" href="./word">จัดการคำศัพท์</a><br><br>
                     <a class="btn btn-warning" href="./lang">จัดการภาษา</a>
                 </div>
             </div>

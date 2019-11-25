@@ -60,8 +60,8 @@
           <form method="GET" action="{{ url('/s') }}">
                 
           <div class="form-group row nav justify-content-center ">
-                <div class="col-sm-4 ">
-            <input id="search" data-keyboard="true" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ" aria-label="Search" />
+                <div class="col-sm-3 ">
+            <input id="search" data-keyboard="true" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="ค้นหา คำศัพท์ภาษาอังกฤษ" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
               ค้นหา
@@ -106,7 +106,11 @@
     
         </div>
       </div></div> <br>
+      @if($word==null)
       <div class="footer fixed-bottom bg-dark ">
+      @else
+      <div class="footer bottom bg-dark ">
+      @endif
       <center><img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp; 
         <b style="color:white " > COPYRIGHT SMT TEAM<b></center>
 </div>

@@ -10,7 +10,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">รายการคำ</div>
+                <div class="card-header">จัดการคำศัพท์</div>
                 <a href="./home">< กลับหน้าหลัก</a>
 
 
