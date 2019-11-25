@@ -11,7 +11,8 @@ class Admin extends Model
     public static function getpagination(){}
     public static function Listword($id=null){
         if($id==null){
-        return DB::table('words')->select('id', 'ws', 'meaning')
+        return DB::table('words')
+        ->join('lang','lang.code','words.lang_ws')
         ->paginate(30);
         //->join('lang','lang.id','words.lang_m')
         //->get();
