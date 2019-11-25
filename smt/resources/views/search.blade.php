@@ -61,7 +61,7 @@
                 
           <div class="form-group row nav justify-content-center ">
                 <div class="col-sm-3 ">
-            <input id="search" data-keyboard="true" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="ค้นหา คำศัพท์ภาษาอังกฤษ" aria-label="Search" />
+            <input id="search" data-keyboard="true" autocomplete="off" required pattern="[A-z ']*" oninvalid="กรุณากรอกข้อมูล" name="word" class="form-control typeahead" type="search" placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
               ค้นหา
