@@ -20,6 +20,7 @@
                                 <thead>
                                   <tr>
                                     <th scope="col">คำศัพท์</th>
+                                    <th scope="col">ภาษา</th>
                                     <th scope="col">ความหมาย</th>
                                     <th scope="col"></th>
                                   </tr>
@@ -28,6 +29,7 @@
                     @foreach($words as $key)
                     <tr>
                             <th scope="row">{{$key->ws}}</th>
+                            <th scope="row">{{$key->name}}</th>
                             <td>{{$key->meaning}}</td>
                             <td>
                                 <a class="btn btn-warning" href="./edit_word/{{$key->id}}">แก้ไข</a>
