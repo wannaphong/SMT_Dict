@@ -52,16 +52,16 @@
   </li>
 </ul>
     
-    <center>
+    <br><br><br><center>
       
       <img src="img/logo.png" class="card-img-top" alt="..."
-      style="width: 300px; height: 200px;">
+      style="width: 300px; height: 200px;"><br>
         <nav>
           <form method="GET" action="{{ url('/s') }}">
                 
           <div class="form-group row nav justify-content-center ">
                 <div class="col-sm-4 ">
-            <input id="search" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="Search" aria-label="Search" />
+            <input id="search" data-keyboard="true" autocomplete="off" required name="word" class="form-control typeahead" type="search" placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ" aria-label="Search" />
                 </div>
             <button class="btn btn-primary col-sm-1" type="submit">
               ค้นหา
@@ -69,7 +69,7 @@
         </div>
           </form>
         </nav>
-      </div></center>
+      </div></center><br><br>
       
       <div class="row d-flex justify-content-center ">
           <div class="col-8">
