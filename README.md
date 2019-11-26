@@ -1,6 +1,6 @@
 # SMT Dict
 
-![SMT Dict](https://i.imgur.com/xZIjK9l.png)
+![SMT Dict](https://i.imgur.com/K4ajpe6.png)
 
 เว็บ : https://smt-dict.numfa.com/
 
