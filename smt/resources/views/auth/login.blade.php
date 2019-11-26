@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('เข้าสู่ระบบ') }}</div>
+                <div class="card-header">{{ __('เข้าสู่ระบบผู้ดูแลระบบ') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
