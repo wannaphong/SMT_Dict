@@ -40,11 +40,12 @@ class AdminController extends Controller
 
         $data=array('ws'=>$ws,'lang_ws'=>$lang_ws,'meaning'=>$meaning,'lang_m'=>$lang_m);
         $add=Admin::SaveWord($data,$id);
-        return redirect("admin");
+        return redirect("word");
     }
     public function edit($id){
         $word=Admin::Listword($id);
         $list_lang=Lang::getLang();
+       // dd($word);
         $data=array('word'=>$word,'lang'=>$list_lang);
         return view('addword',$data);
     }

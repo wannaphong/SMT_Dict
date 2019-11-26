@@ -16,7 +16,7 @@ class Lang extends Model
         DB::table('lang')->insert($data);
         }
         else{
-            DB::table('lang')->where('id',$id)
+            DB::table('lang')->where('lang_id',$id)
             ->update($data);
         }
     }

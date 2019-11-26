@@ -34,16 +34,16 @@
   <style>
       body {
       background-image:url("img/bg.png");
-       
+
       }
     </style>
 </head>
 
   <body>
-  
- 
-    <ul   class="nav navbar navbar-dark bg-dark nav justify-content-end">  
-  
+
+
+    <ul   class="nav navbar navbar-dark bg-dark nav justify-content-end">
+
   <li class="nav-item">
     <a class="nav-link" href="./login" style="color:white">Login</a>
   </li>
@@ -51,14 +51,14 @@
     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">MADE BY SMT</a>
   </li>
 </ul>
-    
+
     <br><br><br><center>
-      
+
       <img src="img/logo.png" class="card-img-top" alt="..."
       style="width: 300px; height: 200px;"><br>
         <nav>
           <form method="GET" action="{{ url('/s') }}">
-                
+
           <div class="form-group row nav justify-content-center ">
                 <div class="col-sm-3 ">
             <input id="search" data-keyboard="true" autocomplete="off" required pattern="[A-z ']*" oninvalid="กรุณากรอกข้อมูล" name="word" class="form-control typeahead" type="search" placeholder="ค้นหาคำศัพท์ภาษาอังกฤษ" aria-label="Search" />
@@ -70,12 +70,12 @@
           </form>
         </nav>
       </div></center><br><br>
-      
+
       <div class="row d-flex justify-content-center ">
           <div class="col-8">
-             
-                   
-         
+
+
+
       @if($word!=null)
       <div class="card shadow p-3 mb-5 bg-white rounded">
                   <div class="card-body">
@@ -103,7 +103,7 @@
     </div>
     </div></div>
     @endif
-    
+
         </div>
       </div></div> <br>
       @if($word==null)
@@ -111,7 +111,7 @@
       @else
       <div class="footer bottom bg-dark ">
       @endif
-      <center><img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp; 
+      <center><img src="img/c.png"  style="width:20px; height: 20px;"> &nbsp;
         <b style="color:white " > COPYRIGHT SMT TEAM<b></center>
 </div>
 

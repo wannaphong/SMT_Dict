@@ -19,18 +19,18 @@
                         <table class="table">
                                 <thead>
                                   <tr>
-                                    <th scope="col">ID</th>
+                                    <th scope="col">ลำดับ</th>
                                     <th scope="col">ภาษา</th>
                                   </tr>
                                 </thead>
                                 <tbody>
                     @foreach($langs as $key)
                     <tr>
-                            <th scope="row">{{$key->id}}</th>
+                            <th scope="row">{{$key->lang_id}}</th>
                             <td>{{$key->name}}</td>
                          <!--   <td>
-                                <a class="btn btn-warning" href="./edit_word/{{$key->id}}">แก้ไข</a>
-                                <a class="btn btn-danger" onclick="checkY()" href="./del_word/{{$key->id}}">ลบ</a>
+                                <a class="btn btn-warning" href="./edit_word/{{$key->lang_id}}">แก้ไข</a>
+                                <a class="btn btn-danger" onclick="checkY()" href="./del_word/{{$key->lang_id}}">ลบ</a>
                             </td>-->
                     </tr>
                     @endforeach
