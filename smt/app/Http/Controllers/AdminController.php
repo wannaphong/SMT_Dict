@@ -29,7 +29,7 @@ class AdminController extends Controller
 
         $data=array('ws'=>$ws,'lang_ws'=>$lang_ws,'meaning'=>$meaning,'lang_m'=>$lang_m);
         $add=Admin::SaveWord($data);
-        return redirect("admin");
+        return redirect("word");
     }
     public function updateWord(Request $request){
         $ws=$request->input('ws');
