@@ -87,6 +87,7 @@
               <tr>
                 <th>คำศัพท์</th>
                 <th>ความหมาย</th>
+                <th>ภาษา</th>
               </tr>
             </center>
           </thead>
@@ -95,6 +96,7 @@
             <tr>
               <td>{{$key->ws}}</td>
               <td>{{$key->meaning}}</td>
+              <td>{{$key->name}}</td>
             </tr>
             @endforeach
           </tbody>

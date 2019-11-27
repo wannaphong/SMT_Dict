@@ -51,6 +51,6 @@ class AdminController extends Controller
     }
     public function del_word($id){
         Admin::delword($id);
-        return redirect("admin");
+        return redirect("word");
     }
 }

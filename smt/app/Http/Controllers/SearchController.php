@@ -15,6 +15,7 @@ class SearchController extends Controller
     public function getsearch(Request $request){
         $ws=$request->input('word');
         $word=Search::getWord($ws);
+        //dd($word);
         $data=array("word"=>$word,"ws"=>$ws);
         return view('search',$data);
 

@@ -21,6 +21,7 @@
                                   <tr>
                                     <th scope="col">ลำดับ</th>
                                     <th scope="col">ภาษา</th>
+                                    <th scope="col">จัดการ</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -28,10 +29,10 @@
                     <tr>
                             <th scope="row">{{$key->lang_id}}</th>
                             <td>{{$key->name}}</td>
-                         <!--   <td>
-                                <a class="btn btn-warning" href="./edit_word/{{$key->lang_id}}">แก้ไข</a>
-                                <a class="btn btn-danger" onclick="checkY()" href="./del_word/{{$key->lang_id}}">ลบ</a>
-                            </td>-->
+                          <td>
+                                <a class="btn btn-warning" href="./edit_lang/{{$key->lang_id}}">แก้ไข</a>
+                                <a class="btn btn-danger" onclick="checkY()" href="./del_lang/{{$key->lang_id}}">ลบ</a>
+                            </td>
                     </tr>
                     @endforeach
                                 </tbody>

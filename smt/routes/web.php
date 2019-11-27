@@ -27,7 +27,10 @@ Route::get('/addword','LangController@AddWord');
 Route::post('/postword','AdminController@postWord');
 Route::post('/postlang','LangController@postLang');
 Route::get('/edit_word/{id}','AdminController@edit');
+Route::get('/edit_lang/{id}','LangController@edit');
+Route::post('updatelang','LangController@updateLang');
 Route::post('update_word','AdminController@updateWord');
 Route::get('/del_word/{id}','AdminController@del_word');
+Route::get('/del_lang/{id}','LangController@del_lang');
 Route::get('/home', 'HomeController@index')->name('home');
 
